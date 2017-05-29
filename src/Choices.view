@@ -1,0 +1,20 @@
+Choices is List
+alignItems center
+flexDirection row
+from props.from
+flexWrap wrap
+marginTop 5
+width 100%
+Color is Horizontal
+backgroundColor item.color
+border 2px solid transparent
+borderColorActive black
+borderColorHover black
+borderRadius 40
+cursor pointer
+cursorActive default
+isActive item.value === props.chosen
+marginLeft 2
+height 40
+onClick () => props.onClick(item)
+width item.isMain ? 40 : 20

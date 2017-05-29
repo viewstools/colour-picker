@@ -1,0 +1,24 @@
+{
+  "name": "colour-picker",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "glam": "^4.0.3",
+    "react": "next",
+    "react-dom": "next"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.7",
+    "views-morph": "^0.0.9"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "surge --project build",
+    "test": "react-scripts test --env=jsdom",
+    "views": "views-morph src --watch --pretty --as react-dom"
+  },
+  "license": "BSD-3-Clause"
+}
