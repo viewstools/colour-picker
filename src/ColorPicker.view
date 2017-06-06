@@ -1,6 +1,8 @@
 ColorPicker is Vertical
-backgroundColor #f2f2f2
-padding 10
+alignSelf center
+backgroundColor #fafafa
+paddingBottom 10
+paddingTop 30
 Hues is Choices
 from props.hues
 chosen props.hue
@@ -15,3 +17,17 @@ Lightnesses is Choices
 from props.lightnesses
 chosen props.lightness
 onClick props.chooseLightness
+
+Color is Horizontal
+alignItems center
+alignSelf center
+backgroundColor props.color
+borderRadius 4
+marginBottom 30
+marginTop 30
+justifyContent center
+height 40
+width 250
+Text
+color white
+text props.color

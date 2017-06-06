@@ -27,20 +27,21 @@ height: 40px; }`,
   ]),
 };
 
-const Choices = props => (
+const Choices = props =>
   <div className={`${styles.h1xczqzm}`}>
-    {props.from.map((item, i) => (
+    {props.from.map((item, i) =>
       <button
         isActive={item.value === props.chosen}
         onClick={() => props.onClick(item)}
-        className={`${styles.h15ybink} ${item.value === props.chosen && 'active'}`}
+        className={`${styles.h15ybink} ${item.value === props.chosen &&
+          'active'}`}
         style={{
           backgroundColor: `${item.color}`,
           width: item.isMain ? 40 : 20,
         }}
         key={i}
       />
-    ))}
-  </div>
-);
+    )}
+  </div>;
+
 export default Choices;

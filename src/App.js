@@ -4,6 +4,12 @@ import lightnesses from './lightnesses.js'
 import React from 'react'
 import saturations from './saturations.js'
 
+const hsl = ({
+  hue,
+  saturation,
+  lightness,
+}) => `hsl(${hue},${saturation}%,${lightness}%)`
+
 export default class App extends React.Component {
   constructor(props) {
     super(props)
@@ -14,7 +20,7 @@ export default class App extends React.Component {
       saturations: saturations(0),
       saturation: 100,
       lightnesses: lightnesses(0, 100),
-      lightness: 100,
+      lightness: 50,
     }
 
     this.chooseHue = this.chooseHue.bind(this)
@@ -61,6 +67,7 @@ export default class App extends React.Component {
         chooseHue={this.chooseHue}
         chooseSaturation={this.chooseSaturation}
         chooseLightness={this.chooseLightness}
+        color={hsl(this.state)}
       />
     )
   }

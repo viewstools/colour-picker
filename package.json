@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "react-scripts": "1.0.7",
-    "views-morph": "^0.0.9"
+    "views-morph": "^0.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
